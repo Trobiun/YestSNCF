@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+   <openedEditor>WorkflowImpl:ParcoursPrincipal</openedEditor>
+   <activeEditor>WorkflowImpl:ParcoursPrincipal</activeEditor>
+   <editorConfigurations>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Saisie de gare d'arrivée/Saisie de gare d'arrivée">
+         <columnWidths>
+            <width>248</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Accès au site/Accès au site">
+         <columnWidths>
+            <width>770</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Saisie de gare de départ/Saisie de gare de départ">
+         <columnWidths>
+            <width>306</width>
+            <width>159</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Saisie de la date et heure de départ/Saisie de la date et heure de départ">
+         <columnWidths>
+            <width>684</width>
+            <width>150</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Retour ?/Retour ?">
+         <columnWidths>
+            <width>100</width>
+            <width>209</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Saisie de la date et heure de retour/Saisie de la date et heure de retour">
+         <columnWidths>
+            <width>675</width>
+            <width>150</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Choix nombre voyageurs/Choix nombre voyageurs">
+         <columnWidths>
+            <width>128</width>
+            <width>665</width>
+            <width>157</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <dataSetCollection resource="DataSetCollectionImpl:#catalog/Donnees/JeuxDonneesGares">
+         <columnWidths>
+            <width>100</width>
+            <width>343</width>
+            <width>173</width>
+         </columnWidths>
+      </dataSetCollection>
+      <table resource="DecisionTableImpl:RenseignementsVoyageur/Renseigner l'âge exact d'un voyageur/Renseigner l'âge exact d'un voyageur">
+         <columnWidths>
+            <width>442</width>
+            <width>116</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:RenseignementsVoyageur/Age exact nécessaire ?/Age exact nécessaire ?">
+         <columnWidths>
+            <width>80</width>
+            <width>225</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:RenseignementsVoyageur/Renseigner carte de réduction/Renseigner carte de réduction">
+         <columnWidths>
+            <width>182</width>
+            <width>324</width>
+            <width>197</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <dataSetCollection resource="DataSetCollectionImpl:#catalog/Donnees/JeuxDonneesDates">
+         <columnWidths>
+            <width>100</width>
+            <width>100</width>
+            <width>100</width>
+            <width>100</width>
+            <width>100</width>
+         </columnWidths>
+      </dataSetCollection>
+      <scenario assistant_orientation="256"
+                resource="TestScenarioImpl:aller_retour-12-25ans-multi-12-25ans">
+         <assistant_sash_weights>
+            <weight>50</weight>
+            <weight>50</weight>
+         </assistant_sash_weights>
+         <right_panel_layer>WORKFLOW_LAYER</right_panel_layer>
+      </scenario>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/deux voyageurs ?/deux voyageurs ?">
+         <columnWidths>
+            <width>133</width>
+            <width>122</width>
+            <width>157</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <table resource="DecisionTableImpl:ParcoursPrincipal/Ajouter voyageur/Ajouter voyageur">
+         <columnWidths>
+            <width>234</width>
+            <width>157</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <workflow resource="WorkflowImpl:RenseignementsVoyageur"
+                viewLocationX="0"
+                viewLocationY="0"
+                zoom="1.0"/>
+      <dataSetCollection resource="DataSetCollectionImpl:#catalog/Donnees/JeuxDonneesAges">
+         <columnWidths>
+            <width>174</width>
+            <width>89</width>
+            <width>109</width>
+            <width>182</width>
+         </columnWidths>
+      </dataSetCollection>
+      <table resource="DecisionTableImpl:RenseignementsVoyageur/Renseigner la plage d'âge d'un voyageur/Renseigner la plage d'âge d'un voyageur">
+         <columnWidths>
+            <width>80</width>
+            <width>436</width>
+            <width>116</width>
+            <width>150</width>
+         </columnWidths>
+         <hiddenKinds/>
+      </table>
+      <testCampaign resource="TestCampaignImpl:Campagne">
+         <dataSetCombinationSorting scenarioToSortPolicy="OnlyCurrentScenario"/>
+      </testCampaign>
+      <generation generationKind="COVERAGE_FIRST"/>
+      <workflow resource="WorkflowImpl:ParcoursPrincipal"
+                viewLocationX="0"
+                viewLocationY="640"
+                zoom="1.0"/>
+   </editorConfigurations>
+</project>
