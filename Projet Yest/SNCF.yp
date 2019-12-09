@@ -464,7 +464,16 @@
       </diagram>
     </testElements>
     <testElements xsi:type="yest:Workflow" id="jEqybELQWhB66Bj51DSMeTynBFw9mM2e" name="ParcoursPrincipal">
-      <flowElements xsi:type="yest:StartPoint" id="wC9vxxDUWGTIeeNqTPmoetl49lQ2yiEC" name="" outgoings="lHYpwMKGfRZjsuvnTt38RVfCDxTpYR2x"/>
+      <flowElements xsi:type="yest:StartPoint" id="wC9vxxDUWGTIeeNqTPmoetl49lQ2yiEC" name="" outgoings="lHYpwMKGfRZjsuvnTt38RVfCDxTpYR2x">
+        <table>
+          <columns xsi:type="yest:DataColumn" id="rBZeCdS5FrwsbLRaRfwMI6IhKSIza8m4" type="SET" dataName="numero_voyageur"/>
+          <decisions id="IzLLzDc5Azbo5fGXwN1NDy0ek9zYLHjI">
+            <cells key="rBZeCdS5FrwsbLRaRfwMI6IhKSIza8m4">
+              <value xsi:type="yest:StringCell" value="1"/>
+            </cells>
+          </decisions>
+        </table>
+      </flowElements>
       <flowElements xsi:type="yest:Task" id="LrlBETpI0s10p48mP6DK9vHRA5iaJKhs" name="Accès au site" incomings="lHYpwMKGfRZjsuvnTt38RVfCDxTpYR2x" outgoings="dYZN6U0oHeP4bA2QIMOuBB8tY3cz5f4i">
         <table>
           <columns xsi:type="yest:OperationColumn" id="MqkUBsisTBPej6rd1WShhquKFoJjrIhr"/>
@@ -524,7 +533,7 @@
               <value xsi:type="yest:OperationCell">
                 <operations reference="nsLp1DuTn6iP0NRyETog02EXh9GO0fao"/>
                 <operations reference="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
-                <operations reference="GKFSa6SJpIRFMiOZRedzUPZq4sPLkCmD"/>
+                <operations reference="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn"/>
               </value>
             </cells>
             <cells key="BNF06VD4HZrQ2xCcwi0iMRGQpv7Ec9Ng">
@@ -592,6 +601,7 @@
         <table>
           <columns xsi:type="yest:DataColumn" id="YodWc67G1wdRlPPuf14KPdNiSElGMoL9" type="SET" dataName="plage_age2"/>
           <columns xsi:type="yest:DataColumn" id="pbifkfktx8qhtXB0vIrJPgDzSvoAVnwg" type="SET" dataName="plage_age"/>
+          <columns xsi:type="yest:DataColumn" id="cYfvSiW3JOBgoH9p4EhDAGPsYGUbsziW" type="SET" dataName="numero_voyageur"/>
           <columns xsi:type="yest:OperationColumn" id="2iUsIHdEz8kqz9HJE12HgLavzPsolFR2"/>
           <columns xsi:type="yest:CriterionColumn" id="5NJlTOLJfsA12RDXKbiYiFA6NaCL464p" criterionType="#requirement"/>
           <decisions id="DAvT7mqKYG9LDEysApxDAsJGvAlNI5En">
@@ -609,6 +619,9 @@
             <cells key="pbifkfktx8qhtXB0vIrJPgDzSvoAVnwg">
               <value xsi:type="yest:StringCell" value="12 - 25ans"/>
             </cells>
+            <cells key="cYfvSiW3JOBgoH9p4EhDAGPsYGUbsziW">
+              <value xsi:type="yest:StringCell" value="2"/>
+            </cells>
           </decisions>
           <decisions id="DbJGQYWahItG9swJWZkD3770es2TlH5W">
             <cells key="YodWc67G1wdRlPPuf14KPdNiSElGMoL9">
@@ -624,6 +637,9 @@
             </cells>
             <cells key="pbifkfktx8qhtXB0vIrJPgDzSvoAVnwg">
               <value xsi:type="yest:StringCell" value="26 - 59ans"/>
+            </cells>
+            <cells key="cYfvSiW3JOBgoH9p4EhDAGPsYGUbsziW">
+              <value xsi:type="yest:StringCell" value="2"/>
             </cells>
           </decisions>
         </table>
@@ -738,12 +754,12 @@
       <diagram visible="true" gridUnit="-1" diagramTypeId="com.smartesting.metamodel.WorkflowDiagram" name="ParcoursPrincipal" pictogramLinks="//@subFolders.0/@testElements.1/@diagram/@children.0/@link //@subFolders.0/@testElements.1/@diagram/@children.1/@link //@subFolders.0/@testElements.1/@diagram/@children.2/@link //@subFolders.0/@testElements.1/@diagram/@children.3/@link //@subFolders.0/@testElements.1/@diagram/@children.4/@link //@subFolders.0/@testElements.1/@diagram/@children.5/@link //@subFolders.0/@testElements.1/@diagram/@children.6/@link //@subFolders.0/@testElements.1/@diagram/@children.7/@link //@subFolders.0/@testElements.1/@diagram/@children.9/@link //@subFolders.0/@testElements.1/@diagram/@children.10/@link //@subFolders.0/@testElements.1/@diagram/@children.11/@link //@subFolders.0/@testElements.1/@diagram/@children.12/@link //@subFolders.0/@testElements.1/@diagram/@children.13/@link //@subFolders.0/@testElements.1/@diagram/@children.15/@link //@subFolders.0/@testElements.1/@diagram/@connections.0/@link //@subFolders.0/@testElements.1/@diagram/@connections.1/@link //@subFolders.0/@testElements.1/@diagram/@connections.2/@link //@subFolders.0/@testElements.1/@diagram/@connections.3/@link //@subFolders.0/@testElements.1/@diagram/@connections.4/@link //@subFolders.0/@testElements.1/@diagram/@connections.5/@link //@subFolders.0/@testElements.1/@diagram/@connections.6/@link //@subFolders.0/@testElements.1/@diagram/@connections.7/@link //@subFolders.0/@testElements.1/@diagram/@connections.8/@link //@subFolders.0/@testElements.1/@diagram/@connections.9/@link //@subFolders.0/@testElements.1/@diagram/@connections.10/@link //@subFolders.0/@testElements.1/@diagram/@connections.11/@link //@subFolders.0/@testElements.1/@diagram/@connections.12/@link //@subFolders.0/@testElements.1/@diagram/@connections.13/@link //@subFolders.0/@testElements.1/@diagram/@children.16/@link //@subFolders.0/@testElements.1/@diagram/@connections.14/@link //@subFolders.0/@testElements.1/@diagram/@connections.15/@link" version="0.16.0">
         <graphicsAlgorithm xsi:type="al:Rectangle" background="//@subFolders.0/@testElements.1/@diagram/@styles.0/@renderingStyle/@adaptedGradientColoredAreas/@adaptedGradientColoredAreas.0/@gradientColor.0/@end/@color" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
         <children xsi:type="yest:StartPointShape" visible="true" active="true" flowNode="wC9vxxDUWGTIeeNqTPmoetl49lQ2yiEC">
-          <graphicsAlgorithm xsi:type="al:Ellipse" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.1" lineWidth="2" transparency="0.0" width="31" height="31" x="360" y="17" style="//@subFolders.0/@testElements.1/@diagram/@styles.0"/>
+          <graphicsAlgorithm xsi:type="al:Ellipse" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.1" lineWidth="2" transparency="0.0" width="31" height="31" x="357" y="14" style="//@subFolders.0/@testElements.1/@diagram/@styles.0"/>
           <link businessObjects="wC9vxxDUWGTIeeNqTPmoetl49lQ2yiEC"/>
           <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.0"/>
         </children>
         <children xsi:type="yest:TaskShape" visible="true" active="true" text="//@subFolders.0/@testElements.1/@diagram/@children.1/@children.0/@graphicsAlgorithm" flowNode="LrlBETpI0s10p48mP6DK9vHRA5iaJKhs">
-          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="101" height="51" x="327" y="102" style="//@subFolders.0/@testElements.1/@diagram/@styles.1" cornerHeight="20" cornerWidth="20"/>
+          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="101" height="51" x="322" y="101" style="//@subFolders.0/@testElements.1/@diagram/@styles.1" cornerHeight="20" cornerWidth="20"/>
           <link businessObjects="LrlBETpI0s10p48mP6DK9vHRA5iaJKhs"/>
           <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.3" incomingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.0"/>
           <children xsi:type="pi:ContainerShape" visible="true">
@@ -751,7 +767,7 @@
           </children>
         </children>
         <children xsi:type="yest:TaskShape" visible="true" active="true" text="//@subFolders.0/@testElements.1/@diagram/@children.2/@children.0/@graphicsAlgorithm" flowNode="oOZkYVr4VnF4xk7mi95mwMtDHbGpPOVa">
-          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="101" height="51" x="329" y="217" style="//@subFolders.0/@testElements.1/@diagram/@styles.2" cornerHeight="20" cornerWidth="20"/>
+          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="101" height="51" x="325" y="217" style="//@subFolders.0/@testElements.1/@diagram/@styles.2" cornerHeight="20" cornerWidth="20"/>
           <link businessObjects="oOZkYVr4VnF4xk7mi95mwMtDHbGpPOVa"/>
           <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.4" incomingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.3"/>
           <children xsi:type="pi:ContainerShape" visible="true">
@@ -772,7 +788,7 @@
           <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.2"/>
         </children>
         <children xsi:type="yest:TaskShape" visible="true" active="true" text="//@subFolders.0/@testElements.1/@diagram/@children.5/@children.0/@graphicsAlgorithm" flowNode="7MEyuUs6HJ6DTk3gxpyTHeOMdOuTYwID">
-          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="144" height="62" x="310" y="432" style="//@subFolders.0/@testElements.1/@diagram/@styles.5" cornerHeight="20" cornerWidth="20"/>
+          <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.3" lineWidth="2" filled="true" transparency="0.0" width="144" height="62" x="304" y="432" style="//@subFolders.0/@testElements.1/@diagram/@styles.5" cornerHeight="20" cornerWidth="20"/>
           <link businessObjects="7MEyuUs6HJ6DTk3gxpyTHeOMdOuTYwID"/>
           <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.6" incomingConnections="//@subFolders.0/@testElements.1/@diagram/@connections.5"/>
           <children xsi:type="pi:ContainerShape" visible="true">
@@ -926,7 +942,7 @@
           </children>
         </children>
         <children xsi:type="yest:ChoicePointShape" visible="true" active="true" extras="//@subFolders.0/@testElements.1/@diagram/@children.16/@children.0/@graphicsAlgorithm //@subFolders.0/@testElements.1/@diagram/@children.16/@children.1/@graphicsAlgorithm" flowNode="prEhNM8nj5JiQeGekCOPfL6cM2CpATn9" labelShape="//@subFolders.0/@testElements.1/@diagram/@children.17">
-          <graphicsAlgorithm xsi:type="al:Polygon" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.5" lineWidth="2" lineStyle="UNSPECIFIED" width="40" height="40" x="352" y="702" style="//@subFolders.0/@testElements.1/@diagram/@styles.7">
+          <graphicsAlgorithm xsi:type="al:Polygon" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.5" lineWidth="2" lineStyle="UNSPECIFIED" width="40" height="40" x="359" y="698" style="//@subFolders.0/@testElements.1/@diagram/@styles.7">
             <points x="20"/>
             <points x="40" y="20"/>
             <points x="20" y="40"/>
@@ -949,7 +965,7 @@
           </children>
         </children>
         <children xsi:type="yest:LabelShape" visible="true" active="true" text="//@subFolders.0/@testElements.1/@diagram/@children.17/@children.0/@graphicsAlgorithm" labelled="//@subFolders.0/@testElements.1/@diagram/@children.16">
-          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="50" height="20" x="397" y="702"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="50" height="20" x="404" y="698"/>
           <children xsi:type="pi:ContainerShape" visible="true">
             <graphicsAlgorithm xsi:type="al:Text" foreground="//@subFolders.0/@testElements.1/@diagram/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" font="//@subFolders.0/@testElements.1/@diagram/@fonts.0" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_TOP" value="jointure"/>
           </children>
@@ -1646,57 +1662,245 @@
       </diagram>
     </testElements>
     <testElements xsi:type="yest:TestCampaign" id="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm" name="Campagne" folders="6HasRc88xuicL1cOTwObbI7fU3nsgGN9" dataSetCollections="V39Fl9mUZUPOr1hqHi2M7C2LsHjPRO0D CyQQu3Hoby1VtA72IpyddCZ6gMOg15FM tlzTmrCHd9jJ5cgGKr6E7Dhd1iwyyvw5"/>
-    <testElements xsi:type="yest:TestScenario" id="ex02yKN3J1EcCOHSXOsBgb72ID2VTRzE" name="aller_retour-12-25ans-multi-12-25ans" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
-      <testActions id="ehyFDj05pKXcjrtlyA2qLb8PLJCBzPPk" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
-      <testActions id="QT7X3IuZG7mQPLpPo86HX2iBch8Oq0ko" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
-      <testActions id="c2wpK0GkZgGvKVcoap7jRT6u8TRGL48A" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
-      <testActions id="flCufsnhLE84F4xAIMBt5WMK4ajNw9ao" operation="HyyaP24i4HGc2MXROolGbmg14vt12xD1"/>
-      <testActions id="YQHzwCzohBLoE7ZiJ9zVmpzFTsHCfbCu" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
-      <testActions id="Y6pq8i1a6qq3zm5dkiDGN6SmPkhACCy8" operation="GKFSa6SJpIRFMiOZRedzUPZq4sPLkCmD"/>
-      <testActions id="nvOOf3Jq7ClvbHYLogwmdyXlCQs3qyzB" operation="NIP0sdUnZxdmhgvREIqlDzzJlPevM3hd"/>
-      <testActions id="EqDetqKJ6NB8i2m6Fs3owLdtnf4pH6FO" operation="9CsWRNtIRgGTl2GnpVc9hJorIMftCpip"/>
-      <testActions id="qrEjatYVJ3cfTro2ICulcikDMWVMYIUz" operation="6k5Gu02DhJAPa46AXQrslEQBrv9y6fMr"/>
-      <testActions id="Us4begivdUbCNwVLLFFDBI1yWIwVEpHJ" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7"/>
-      <testActions id="vz5mDLNY3kubfj3LxwkZNrf5GGcFJkBs" operation="EVXOL1GAJ4f4W2Ge7V0NBdpXf4Ji5R03"/>
-      <testActions id="LHZCkMZxe90iLjwlTRKHHTq45XHFwjaC" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
-      <testActions id="1MPROxA9EM27rqSUwvJ9i36WXImY5ywY" operation="fZFLEhCvjxiWqcUwysIBGcFlecWAO6gD"/>
-      <testActions id="6Kq7m84e6lRMWF5M5GMfhYUN36uzp962" operation="YOCv6cMc8Ze9m9lCKXKOAgzRx21YrHji"/>
-      <testActions id="GLvN49hnsU2jGSImUfPx0Om94I9oyhbi" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7"/>
-      <testActions id="Sbm0q6QarvmmM3KfpgikSMOSbO4ykdvr" operation="EVXOL1GAJ4f4W2Ge7V0NBdpXf4Ji5R03"/>
-      <testActions id="fI0aiMxKFQPdYjr3CkQmatNT45JqgCzG" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
+    <testElements xsi:type="yest:AutomationConfiguration" id="CuXmBnC3rXx6La0anmERGvkpHaqfqKRn" campaign="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm" name="PublicationJava Selenium" publisherId="com.smartesting.publishers.javaselenium.JavaSeleniumEditor">
+      <parameters name="DictionaryFile" value="C:/Users/Robin/Desktop/Shared/Cours/M2/S9/MBT/SNCF/SNCF.xlsx"/>
+      <parameters name="DestinationPackageName" value="sncf_keywords"/>
+      <operationScripts testOperation="YOCv6cMc8Ze9m9lCKXKOAgzRx21YrHji">
+        <after/>
+        <body>
+          <calls keywordId="ajouterVoyageur" keywordName="ajouterVoyageur" id="P7NThhRyZDtREkB7Mn9zFa4Dwr27aCvT"/>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN">
+        <after/>
+        <body>
+          <calls keywordId="choisirGareDepart" keywordName="choisirGareDepart" id="KFiFPBSuJOjNb3rPSwoXgRklNu8NwT2T">
+            <arguments parameterName="&quot;gareDepart&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="i6jOWdqj5ecshODEyxDVUHN6RPFQZGO3" dataName="gare_depart" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD">
+        <after/>
+        <body>
+          <calls keywordId="choisirHeureAller" keywordName="choisirHeureAller" id="akvcX2fCw5EP2gx4ecvb70HpmuggkzDk">
+            <arguments parameterName="&quot;heureAller&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="7yuIzuvZdql33OOXZxyLHoYdVq3T2Pua" dataName="heure_depart" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="HyyaP24i4HGc2MXROolGbmg14vt12xD1">
+        <after/>
+        <body>
+          <calls keywordId="choisirDateAller" keywordName="choisirDateAller" id="aXbkDTMRR8HkbdcgQUK6f5vnBk7x4xAR">
+            <arguments parameterName="&quot;dateAller&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="jFijHfzmCLGJowd715nzcpyZcdH0haPs" dataName="date_depart" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="9CsWRNtIRgGTl2GnpVc9hJorIMftCpip">
+        <after/>
+        <body>
+          <calls keywordId="choisirHeureRetour" keywordName="choisirHeureRetour" id="HRUll82rwQJjv0m4OS0LrsAB2F09vgS7">
+            <arguments parameterName="&quot;heureRetour&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="6koHTwCmghKwCtwgTxuSNyHUpVoXqN7f" dataName="heure_retour" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="NIP0sdUnZxdmhgvREIqlDzzJlPevM3hd">
+        <after/>
+        <body>
+          <calls keywordId="choisirDateRetour" keywordName="choisirDateRetour" id="j0P1ClW6vDG0XXe77laNHxm9DyTbNVNk">
+            <arguments parameterName="&quot;dateRetour&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="jXJI8gFvQS8yH0sYuGxd2FW2iSS4GdVq" dataName="date_retour" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn">
+        <after/>
+        <body>
+          <calls keywordId="validerAller" keywordName="validerAller" id="eKYG3ajwGZcEmmyrikIPIhDH8j2jhIjK"/>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="nsLp1DuTn6iP0NRyETog02EXh9GO0fao">
+        <after/>
+        <body>
+          <calls keywordId="choisirDateAller" keywordName="choisirDateAller" id="FJSeerQkeiDD7GuxmbXqcIIlpszljXU5">
+            <arguments parameterName="&quot;dateAller&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="h4g3J2cMXIiGEv3EEIwcLwhSIUMPooRR" dataName="date_depart" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="6k5Gu02DhJAPa46AXQrslEQBrv9y6fMr">
+        <after/>
+        <body>
+          <calls keywordId="validerRetour" keywordName="validerRetour" id="KBUrHhrwkozwNYqNMG7mjM9ZZc645pWr"/>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG">
+        <after/>
+        <body>
+          <calls keywordId="choisirGareArrivee" keywordName="choisirGareArrivee" id="Zkj6OPqGxaumtXLHGo00yo7Hpsu87vzu">
+            <arguments parameterName="&quot;gareArrivee&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="MDwhc8g4Zap4LD2WmK93fH39nOIp5T7m" dataName="gare_arrivee" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <operationScripts testOperation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <after/>
+        <body>
+          <calls keywordId="choisirPlageAge" keywordName="choisirPlageAge" id="4mJpYMDtcRNaM4FMTGFVCxYk4gKQ7wRo">
+            <arguments parameterName="&quot;numeroVoyageur&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="39Q1Eul2zedvoTLMJJ8r9o5md4FSFD9Y" dataName="numero_voyageur" dataKind="designDataKind"/>
+              </parameterValue>
+            </arguments>
+            <arguments parameterName="&quot;plageAge&quot;">
+              <parameterValue/>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <globalBefore>
+        <calls keywordId="initialization" keywordName="initialization" id="OfNG2IFSPshez1pyPWAmMsOUSvD3QbgG">
+          <arguments parameterName="&quot;adresse&quot;">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepText" content="https://www.oui.sncf/billet-train"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+      </globalBefore>
+      <globalAfter>
+        <calls keywordId="finalization" keywordName="finalization" id="hWWG0MQvFAk0zSV1VZnzgInXYDdnCkLT"/>
+      </globalAfter>
+    </testElements>
+    <testElements xsi:type="yest:TestScenario" id="U59Kvd9Mymjcn7LxqekFvD67spSvtHh9" name="aller_retour-12-25ans-multi-12-25ans" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
+      <testActions id="uMLIZOIkQfNEfzM1RqHH2iYTop0lxBaI" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
+      <testActions id="TznAUNBjlzEX0joly1bRUrLLWKxaB9CU" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
+      <testActions id="soUi6atiwUJKI6lQBIMt3zfID3rR5Izu" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
+      <testActions id="MgA2nY7SIr52yClGywbvL6da2Tre2u5h" operation="nsLp1DuTn6iP0NRyETog02EXh9GO0fao"/>
+      <testActions id="lCLKAQg9ot3yb0FhcL1qlgei5WiE0JHv" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
+      <testActions id="UjIH7iEO4N4H2fmjMZTGsBLRQyE3y8Yc" operation="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn"/>
+      <testActions id="I7RS2ChkNGDomSIE4sbZ0emk3FzVFvKo" operation="NIP0sdUnZxdmhgvREIqlDzzJlPevM3hd"/>
+      <testActions id="yVLztOt1lZhjomJr99H5X7l7vK1ehsLS" operation="9CsWRNtIRgGTl2GnpVc9hJorIMftCpip"/>
+      <testActions id="YFfit2U79PlVXC6jdEO3RbBAt4Df3JCC" operation="6k5Gu02DhJAPa46AXQrslEQBrv9y6fMr"/>
+      <testActions id="gleQnyiO6VrCVTE3SDkyQhTqPHuu2L6Q" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <stepFieldValues referencedStepField="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a">
+          <value definition="1" id="HyMKiaH9Z83k5sHnTL3TRxuE6mzummZH"/>
+        </stepFieldValues>
+      </testActions>
+      <testActions id="o889pix25yuj4hM2RRSrZflkDxqvM9l7" operation="EVXOL1GAJ4f4W2Ge7V0NBdpXf4Ji5R03"/>
+      <testActions id="w8Ciqh7Qb4GjxabOKEbK0TuY3BRWGtM9" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
+      <testActions id="XX1DEvaHXwsfaEfo33d9TU8kEp8nfFVL" operation="fZFLEhCvjxiWqcUwysIBGcFlecWAO6gD"/>
+      <testActions id="SmqOok1hITth6WZ2iCbFuZ48B4o2AH13" operation="YOCv6cMc8Ze9m9lCKXKOAgzRx21YrHji"/>
+      <testActions id="FPVsmo24zfgna78eEZyUndaDhi4wllix" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <stepFieldValues referencedStepField="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a">
+          <value definition="2" id="9AyWHfXVpYt1YQqTAr6f7SvXAxV506Mf"/>
+        </stepFieldValues>
+      </testActions>
+      <testActions id="5oGYvcAVIPe2qxyQvvdAjhdNOgl0asJI" operation="EVXOL1GAJ4f4W2Ge7V0NBdpXf4Ji5R03"/>
+      <testActions id="ZFyvBOK07X71hGt3mEG1t4kIh9oz1xdg" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
       <dataSetCombinations testCampaign="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm">
-        <combinations dataSets="d2lAYPEQJyMAb3qVSd5P0gHJrDwHBqao nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="0LTEzfWENHI5VZekMKH4h5PItZmlFOVu"/>
+        <combinations dataSets="d2lAYPEQJyMAb3qVSd5P0gHJrDwHBqao nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="X6ywF7nZxH8MCYhNGmahWcBTzwwtqjzH"/>
       </dataSetCombinations>
     </testElements>
-    <testElements xsi:type="yest:TestScenario" id="0jZfKSAF5FJGlJ5H8jPhCcjTGE9LbSOQ" name="simple-26-59ans-solo" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
-      <testActions id="oqQxoHNpTM8gahmKpFDMYrGv8wQicppn" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
-      <testActions id="KtQUFmBSpzUW2N18o9RFtmpw2pb4XCke" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
-      <testActions id="OmKZ9foPng35AoQBM5yog2Mk5KYsaKus" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
-      <testActions id="YRioZIIha2QY9MImJ3GqOxCmXfLYEVr0" operation="HyyaP24i4HGc2MXROolGbmg14vt12xD1"/>
-      <testActions id="P2yohq43mxHyShru5qakH371QzoCTNAc" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
-      <testActions id="JhVcmnMJnptwGOEOakkmydG228dvpVB5" operation="GKFSa6SJpIRFMiOZRedzUPZq4sPLkCmD"/>
-      <testActions id="WDOMEGTvHlFnsvvTy888lQ3MeO8kU5RR" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7"/>
-      <testActions id="R9YpUk4jRsfVDxOTDhdR83RUUfVCqro7" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
+    <testElements xsi:type="yest:TestScenario" id="slCz1Sixlhw0pSK7DvWaox1bzSKoaZAe" name="simple-26-59ans-solo" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
+      <testActions id="L4j6CqHSMnZYKGGUuBN4zFFy2fYa9Iar" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
+      <testActions id="yBWKqxV2sKNUiICfTWDWcO9tDyowDOD4" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
+      <testActions id="bahFCRp5RtITjJVpwKsx5CteTXeWgnF3" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
+      <testActions id="2piQXqdfm3D1yklMsD3Tt5sHKpuvWwKZ" operation="nsLp1DuTn6iP0NRyETog02EXh9GO0fao"/>
+      <testActions id="S0XMUezuUccqy7AbwDuI4MJ4HMCB8fpS" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
+      <testActions id="sqyNfvXiPi9xysy1wvpupRv0SWIp0Zaz" operation="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn"/>
+      <testActions id="AsYihyODdP5cL8QasN6stZGVGdw89Nly" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <stepFieldValues referencedStepField="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a">
+          <value definition="1" id="k1WYfCeZZtmoP7sS6Tn4MBlLGaxw6Vue"/>
+        </stepFieldValues>
+      </testActions>
+      <testActions id="w7OgQ0nCgDpE6m8HTFfdBTJrLfK6qDIi" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
       <dataSetCombinations testCampaign="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm">
-        <combinations dataSets="adiEpSvBwQe35E51ZfE5E04ts5qqTlG9 nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="THBYG0M9we1DvzoWTCOAG3dCGmP0womP"/>
+        <combinations dataSets="adiEpSvBwQe35E51ZfE5E04ts5qqTlG9 nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="EIMm2pFMlmlhevdVkkATD42Uxk5zc30x"/>
       </dataSetCombinations>
     </testElements>
-    <testElements xsi:type="yest:TestScenario" id="aYbSg245QBk6iU2W3YZDJ8VirLWse4NU" name="simple-26-59ans-multi-26-59ans" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
-      <testActions id="TQwHG3alEu3W4NSh6vQcOIzqeIN6gREQ" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
-      <testActions id="JenhFqp5ZBrSzV0fwDsnZ58aSrfxaKlX" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
-      <testActions id="oxo8rgm9iXyQXQSNluFiyM27RsD2Cnwk" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
-      <testActions id="KZTT0Hjj7Frq2JZJT1YEWQRwHNITvSip" operation="HyyaP24i4HGc2MXROolGbmg14vt12xD1"/>
-      <testActions id="Xh2VVe3XFZXKMPHIWu0OahZceVzvrzv0" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
-      <testActions id="0bXueTgzEtxogJFj4BOfXI58myNpjJr7" operation="GKFSa6SJpIRFMiOZRedzUPZq4sPLkCmD"/>
-      <testActions id="GqsqQOyFijioJXKVXpK1vno2cl5So2VQ" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7"/>
-      <testActions id="lbAyy6jPSa4l6myHQF42kZKcZflRICJU" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
-      <testActions id="DSxSzo8SSGj7RL3UkBB4T9fzyyqumsdq" operation="fZFLEhCvjxiWqcUwysIBGcFlecWAO6gD"/>
-      <testActions id="9zvmqWHroedO6vxSYenRscatSHjetaic" operation="YOCv6cMc8Ze9m9lCKXKOAgzRx21YrHji"/>
-      <testActions id="zupGe2KwgfdJUnyCPbzElxgTASDjiNdL" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7"/>
-      <testActions id="bfsrkrSLV3osDw1qxxIcnfXEL21ywlMd" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
+    <testElements xsi:type="yest:TestScenario" id="U1Toj6su61bZpAN6DssoSsbJUESWpNED" name="simple-26-59ans-multi-26-59ans" associatedWorkflow="jEqybELQWhB66Bj51DSMeTynBFw9mM2e">
+      <testActions id="9lUxbXWSXMX577bEwgr1wiOWInvNtQZz" operation="MUYSvaomcHgxN9ph8m8oAud7ycCi291s"/>
+      <testActions id="7Jj2VjV1ksjdIy4IvYbDU9UFIT8jrW0F" operation="j7eVkc7Is2bEv78huQJC95FIyMAc8qJN"/>
+      <testActions id="gKpAqlPhppu4LSAPXarmm8hV8YOV4uzW" operation="uXAL1MUnIse3o6JxD6z2KBrtG4fK0bPG"/>
+      <testActions id="Wkxp2nG4QUNUfO4gLigCjNpRZbyRujje" operation="nsLp1DuTn6iP0NRyETog02EXh9GO0fao"/>
+      <testActions id="UUO1MMwJ52Z3v81PtzQO0SOo9gV22xxV" operation="8UmDh3wyeQN2iSnJPJYJSoIMldKNo0qD"/>
+      <testActions id="Lt9LIdIdtKLUyTDb5G5kNdaAm5Qotms3" operation="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn"/>
+      <testActions id="GzvRQVHCGUFklBGRNYgo0CGOV28LZG7h" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <stepFieldValues referencedStepField="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a">
+          <value definition="1" id="yAhVRTwhGplzlL08hfUP2Jv47chlJzHB"/>
+        </stepFieldValues>
+      </testActions>
+      <testActions id="7sYIx7QAiJsFHYJ9MpjnAZZKEmIHuDmj" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
+      <testActions id="uBLPIw443ymfNWPp7KeP35EPNlYbCuvm" operation="fZFLEhCvjxiWqcUwysIBGcFlecWAO6gD"/>
+      <testActions id="Ccsccjk0fkB4ZnRSW5TBczPjlBLhQm3l" operation="YOCv6cMc8Ze9m9lCKXKOAgzRx21YrHji"/>
+      <testActions id="bxZVRop7XVpQoXQHwYTxUC3JgrKJhD0N" operation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <stepFieldValues referencedStepField="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a">
+          <value definition="2" id="VadoGGFE1OZS98VCC9IBaqyX0fDlJFJY"/>
+        </stepFieldValues>
+      </testActions>
+      <testActions id="l2XNDtiezTChPTvDiLMNSoaKVjDcLZT8" operation="dxEXg7MXye5DdwwF3CsdrhHIhiMMGpqI"/>
       <dataSetCombinations testCampaign="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm">
-        <combinations dataSets="adiEpSvBwQe35E51ZfE5E04ts5qqTlG9 nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="PYIjSyNKLEdd6OBhZS8xYBIdtzlUYDHf"/>
+        <combinations dataSets="adiEpSvBwQe35E51ZfE5E04ts5qqTlG9 nHXsi4upJHKTtaFKeTQgWXGPNNgI6DTK hCf4RAFvM514LgdmlXRDFqVh4XmUfqgI" id="tdc14mO3gncOaGySzGBn2luNubQF7i8Y"/>
       </dataSetCombinations>
+    </testElements>
+    <testElements xsi:type="yest:AutomationConfiguration" id="ZZNaInSkz0jxxnmQl9bXAwgH8c6BN47Q" campaign="pBln4yKXTbTqL81p5KOlOnx1CvdarUUm" name="PublicationJava Selenium1" publisherId="com.smartesting.publishers.javaselenium.JavaSeleniumEditor">
+      <parameters name="DictionaryFile" value="C:/Users/Robin/Desktop/Shared/Cours/M2/S9/MBT/SNCF/SNCF.xlsx"/>
+      <parameters name="DestinationPackageName" value="sncf"/>
+      <operationScripts testOperation="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
+        <after/>
+        <body>
+          <calls keywordId="choisirPlageAge" keywordName="choisirPlageAge" id="MjndLP5go4a1OfXEpGVMy3u96PwyejOc">
+            <arguments parameterName="&quot;numeroVoyageur&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="fgwXgyc8sStpVDw0FHSSAO5Z2bnI7ePz" dataName="numero_voyageur" dataKind="designDataKind"/>
+              </parameterValue>
+            </arguments>
+            <arguments parameterName="&quot;plageAge&quot;">
+              <parameterValue>
+                <stepElements xsi:type="yest:StepField" id="UKljCMXbTHhuD086sSqwqpvnx1GKapJ3" dataName="plage_age_voyageur" dataKind="implementationDataKind"/>
+              </parameterValue>
+            </arguments>
+          </calls>
+        </body>
+        <before/>
+      </operationScripts>
+      <globalBefore/>
+      <globalAfter/>
     </testElements>
   </subFolders>
   <testElements xsi:type="yest:Workflow" id="vQ4J6T0o7hpPdjRiguQ4k4WY0gopCgqA" name="ParcoursPrincipal">
@@ -2449,7 +2653,8 @@
   <testElements xsi:type="yest:TestOperation" id="E4pMWB648YGI32R7sKdwff77MbxVBdM7">
     <highLevelStep>
       <action>
-        <stepElements xsi:type="yest:StepText" content="Renseigner la plage d'âge d'un voyageur"/>
+        <stepElements xsi:type="yest:StepText" content="Renseigner la plage d'âge d'un voyageur&#xD;&#xA;nb : "/>
+        <stepElements xsi:type="yest:StepField" id="aUSqruLwoM6Yos3IF4wLnGY3XFwSmv9a" dataName="numero_voyageur" dataKind="designDataKind"/>
       </action>
       <expectedResult>
         <stepElements xsi:type="yest:StepText" content="Il est possible de sélectionner une plage d’âge dans une liste déroulante. Les plages d’âge possibles: 12 –25 ans et 26 –59 ans..."/>
@@ -3020,7 +3225,7 @@
   <testElements xsi:type="yest:TestOperation" id="GKFSa6SJpIRFMiOZRedzUPZq4sPLkCmD">
     <highLevelStep>
       <action>
-        <stepElements xsi:type="yest:StepText" content="Valider"/>
+        <stepElements xsi:type="yest:StepText" content="Valider depart"/>
       </action>
       <expectedResult>
         <stepElements xsi:type="yest:StepText" content="Afin de valider l’heure de départ il faut cliquer sur  le  bouton  «Appliquer».    La  date  et  heure de   départ   seront affichés dans   le   champ «Quand» ou «Aller»."/>
@@ -3040,7 +3245,7 @@
   <testElements xsi:type="yest:TestOperation" id="6k5Gu02DhJAPa46AXQrslEQBrv9y6fMr">
     <highLevelStep>
       <action>
-        <stepElements xsi:type="yest:StepText" content="Valider"/>
+        <stepElements xsi:type="yest:StepText" content="Valider retour"/>
       </action>
       <expectedResult>
         <stepElements xsi:type="yest:StepText" content="Afin de valider la date et l’heure d’arrivée il faut cliquer sur le bouton «Appliquer».  La date et l’heure du retour seront affichés dans le champ «Retour»."/>
@@ -3068,6 +3273,65 @@
       </expectedResult>
     </highLevelStep>
   </testElements>
+  <testElements xsi:type="yest:TestOperation" id="dCa63lPlc9AYdfef21n9iZGSUDIXiHzn">
+    <highLevelStep>
+      <action>
+        <stepElements xsi:type="yest:StepText" content="Valider départ"/>
+      </action>
+      <expectedResult>
+        <stepElements xsi:type="yest:StepText" content="Afin de valider l’heure de départ il faut cliquer sur  le  bouton  «Appliquer».    La  date  et  heure de   départ   seront affichés dans   le   champ «Quand» ou «Aller»."/>
+      </expectedResult>
+    </highLevelStep>
+  </testElements>
+  <testElements xsi:type="yest:TestScenario" id="Rdqct1lzAyrUHXI5qbb71YwifUValoFq" name="Scénario">
+    <testActions id="W7umRWiOtxRFEZsFmvf721oRBZGH2734" operation="GZp5Ms3W2Cz3yZAMQiQhtNDXrhuWosP0">
+      <stepFieldValues referencedStepField="XNQdxs2Ae7c3j3TaXRQ5nkC1Y07VoR0H">
+        <value definition="1" id="aGh4N33CmcXgjO2vbzjNthuyhyDJblXX"/>
+      </stepFieldValues>
+    </testActions>
+    <testActions id="BPjG5hLTh21a5lYJA44x2OAapQo5CRvf" operation="GZp5Ms3W2Cz3yZAMQiQhtNDXrhuWosP0">
+      <stepFieldValues referencedStepField="XNQdxs2Ae7c3j3TaXRQ5nkC1Y07VoR0H">
+        <value definition="2" id="vZWYfvrlgZGSXrhuymUajamGjAaEx08T"/>
+      </stepFieldValues>
+    </testActions>
+    <dataSetCombinations testCampaign="ciwVuwMDfs2JZmn6PGxDXxc6BvsTqurL">
+      <combinations dataSets="961NSLLEerycEFwJdrAkdslIFSKFun3I" id="6B7FtLi8OXVQFKIk0a0zOplWd3Igi6Uk"/>
+      <combinations dataSets="ZUYSQYXM4Y5958k49vChIutXy9PMVz6b" id="NKBp7IoskztJxDfpGvtEKlWW5W0RFb0M"/>
+    </dataSetCombinations>
+  </testElements>
+  <testElements xsi:type="yest:TestOperation" id="GZp5Ms3W2Cz3yZAMQiQhtNDXrhuWosP0">
+    <highLevelStep>
+      <action>
+        <stepElements xsi:type="yest:StepField" id="XNQdxs2Ae7c3j3TaXRQ5nkC1Y07VoR0H" dataName="numero_voyageur" dataKind="designDataKind"/>
+      </action>
+      <expectedResult/>
+    </highLevelStep>
+  </testElements>
+  <testElements xsi:type="yest:TestCampaign" id="ciwVuwMDfs2JZmn6PGxDXxc6BvsTqurL" name="tmp" testScenarios="Rdqct1lzAyrUHXI5qbb71YwifUValoFq" dataSetCollections="YS9w8SxqKP1FaipeFQGYJjJDwMrZtgaP"/>
+  <testElements xsi:type="yest:AutomationConfiguration" id="1pROdOuPGSXUJ0gVWcUvu4DVtMchpezI" campaign="ciwVuwMDfs2JZmn6PGxDXxc6BvsTqurL" name="PublicationJava Selenium" publisherId="com.smartesting.publishers.javaselenium.JavaSeleniumEditor">
+    <parameters name="DictionaryFile" value="C:/Users/Robin/Desktop/Shared/Cours/M2/S9/MBT/SNCF/SNCF.xlsx"/>
+    <parameters name="DestinationPackageName" value="com"/>
+    <operationScripts testOperation="GZp5Ms3W2Cz3yZAMQiQhtNDXrhuWosP0">
+      <after/>
+      <body>
+        <calls keywordId="choisirCarteReduction" keywordName="choisirCarteReduction" id="SwcQWru5CqvpsQ7l09RaAPPTOiOal622">
+          <arguments parameterName="&quot;numeroVoyageur&quot;">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="V7PCSrP6QGPdluV6Qijhy3NCIUVQRn7u" dataName="numero_voyageur" dataKind="designDataKind"/>
+            </parameterValue>
+          </arguments>
+          <arguments parameterName="&quot;carteReduction&quot;">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="3fElVSKK6kOJvacMqUmEA10ZUnxpfFxW" dataName="tmp" dataKind="implementationDataKind"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+      </body>
+      <before/>
+    </operationScripts>
+    <globalBefore/>
+    <globalAfter/>
+  </testElements>
   <dataDictionary name="#dictionary" id="uJv7ZFHCwWzBo7DJdSscVnbi6KH0sVvB">
     <datas name="type_billet" id="WcZI5PyjrdkL7tI03DI9d4RWsPcGOnMh"/>
     <datas name="plage_age" id="o61yM4PMyEVBPwkDBxgT2TLMMMeZv3zE"/>
@@ -3075,59 +3339,78 @@
     <datas name="nombre_voyageurs" id="MUXpr8mBi6HmgzwptuvJV33vq3yC07fz"/>
     <datas name="plage_age1" id="hBl1nbFG5zRGdu57VqElGjUAK2kJW1ur"/>
     <datas name="plage_age2" id="yzxJNv2ISLvP8UsI2YMBf3Og8kDRIWwN"/>
+    <datas name="numero_voyageur" id="w6gqK6mzT965FvCzhuozvetEdFeMFpA7"/>
   </dataDictionary>
   <dataSetCatalog name="#catalog" id="QqwX7EUqbnaV7Qfv8OZlrQNgk7oZXuoQ">
+    <dataSetCollections name="Ensemble de jeux de données" id="YS9w8SxqKP1FaipeFQGYJjJDwMrZtgaP">
+      <dataSets name="toto" id="961NSLLEerycEFwJdrAkdslIFSKFun3I">
+        <values value="toto" dataReference="FvKJiRQGqjhaYOTQyEGpfwmgXaK3f9yO"/>
+      </dataSets>
+      <dataSets name="tata" id="ZUYSQYXM4Y5958k49vChIutXy9PMVz6b">
+        <values value="tata" dataReference="FvKJiRQGqjhaYOTQyEGpfwmgXaK3f9yO"/>
+      </dataSets>
+    </dataSetCollections>
     <subCategories name="Donnees" id="o5YgddEsPH02iyFKVTW3L61tRpdSZSLL">
       <dataSetCollections name="JeuxDonneesAges" id="V39Fl9mUZUPOr1hqHi2M7C2LsHjPRO0D">
         <dataSets name="12-25 sans carte" id="d2lAYPEQJyMAb3qVSd5P0gHJrDwHBqao">
           <values value="12 - 25ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="12" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Sans carte de réduction" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Sans carte de réduction" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="12 - 25ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="12-25 abo 1e classe" id="4KcTVqv7VXqNzwTZ01E7WO796c0hJmqC">
           <values value="12 - 25ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="25" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Abo Fréquence 1e classe" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Abo Fréquence 1e classe" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="12 - 25ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="26-59 abo 1e classe" id="adiEpSvBwQe35E51ZfE5E04ts5qqTlG9">
           <values value="26 - 59ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="59" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Abo Fréquence 1e classe" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Abo Fréquence 1e classe" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="26 - 59ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="12-25 abo 2e classe" id="aux559dE1qOPutJkVoH4HR1i9OnUZQpC">
           <values value="12 - 25ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="17" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Abo Fréquence 2e classe" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Abo Fréquence 2e classe" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="12 - 25ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="26-59 sans carte" id="kkfKA8j2xPtBSaCR3FLfbnmASfSUkmHU">
           <values value="26 - 59ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="26" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Sans carte de réduction" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Sans carte de réduction" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="26 - 59ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="26-59 abo 2e classe" id="xvi2AWih1odLTimuuGGpOAFXqQmQbI8q">
           <values value="26 - 59ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="40" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Abo Fréquence 2e classe" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Abo Fréquence 2e classe" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="26 - 59ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="12-25 Accom week-end" id="fekQzX4TVULVTOQ9D4D67d8LR2sQpnXz">
           <values value="12 - 25ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="20" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Accompagnant Carte Week-end" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Accompagnant Carte Week-end" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="12 - 25ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="26-59 Accom week-end" id="fza2Sq6zMjE7bvAfLHrNgm9N6W6jkNVX">
           <values value="26 - 59ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="30" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Accompagnant Carte Week-end" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Accompagnant Carte Week-end" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="26 - 59ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="12-25 Accom carte-avantage" id="Uk0VaIdi7Aq8thf3pf1seiM5R00LcA5y">
           <values value="12 - 25ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="23" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Accompagnant Carte Avantage" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Accompagnant Carte Avantage" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="12 - 25ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
         <dataSets name="26-59 Accom carte-avantage" id="9491Wau3lwRgwtgqMklJXEgiZDtLCLXH">
           <values value="26 - 59ans" dataReference="//@dataSetCatalog/@dataReferences.9"/>
           <values value="50" dataReference="zdGJ1timPALeDikNkKlLh3hflmOXB4wr"/>
-          <values value="Accompagnant Carte Avantage" dataReference="//@dataSetCatalog/@dataReferences.10"/>
+          <values value="Accompagnant Carte Avantage" dataReference="CXdmAL7OucEU0BJjeKyFdX95Yls28LbV"/>
+          <values value="26 - 59ans" dataReference="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
         </dataSets>
       </dataSetCollections>
       <dataSetCollections name="JeuxDonneesDates" id="CyQQu3Hoby1VtA72IpyddCZ6gMOg15FM">
@@ -3167,5 +3450,8 @@
     <dataReferences xsi:type="yest:DesignData" dataName="plage_age"/>
     <dataReferences xsi:type="yest:DesignData" dataName="type_carte_reduction"/>
     <dataReferences xsi:type="yest:DesignData" dataName="nombre_voyageurs"/>
+    <dataReferences xsi:type="yest:ImplementationData" dataName="numeroVoyageur" id="aRTV8oDbL0NN22hWvZixXqozG13syx96"/>
+    <dataReferences xsi:type="yest:ImplementationData" dataName="tmp" id="FvKJiRQGqjhaYOTQyEGpfwmgXaK3f9yO"/>
+    <dataReferences xsi:type="yest:ImplementationData" dataName="plage_age_voyageur" id="tax7rBJrzjbFKmyvGhmwsep9kHJb0xzk"/>
   </dataSetCatalog>
 </yest:Project>
